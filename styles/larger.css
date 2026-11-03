@@ -1,0 +1,58 @@
+@media only screen and (min-width:38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 32px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        width: 100%;
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .navigation a {
+        border-left: none;
+        border-bottom: 4px solid transparent;
+    }
+
+    /* About Me + Student Photo side by side */
+    .intro {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    .intro section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro .panel {
+        flex: 1;
+    }
+
+    /* Course cards in three columns */
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
