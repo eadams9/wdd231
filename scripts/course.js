@@ -1,5 +1,5 @@
-// Course list from the assignment.
-// Change completed to true for each course you have finished.
+// Course list
+
 const courses = [
     {
         subject: 'CSE',
@@ -117,7 +117,7 @@ function filterCourses(subject) {
     if (subject === 'all') {
         return courses;
     }
-    return courses.filter(course => course.subject === subject);
+    return courses.filter(course => course.subject.charAt(0) === subject.charAt(0));
 }
 
 // Button events
