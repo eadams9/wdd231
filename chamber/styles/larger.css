@@ -1,0 +1,24 @@
+/* larger.css: enhancements for wider screens */
+@media only screen and (min-width: 48rem){
+  header{flex-wrap:nowrap;padding:.75rem 2rem}
+  #menu-toggle{display:none}
+  #primary-nav{width:auto;order:1;margin-left:auto}
+  .controls{order:2}
+  #primary-nav ul{display:flex;flex-direction:row;gap:.25rem}
+  #primary-nav a{border:0;border-radius:.4rem;padding:.5rem .9rem}
+
+  main{width:100%;max-width:75rem;margin:0 auto;padding:1.5rem 2rem}
+  #members.grid{grid-template-columns:repeat(2,1fr)}
+
+  /* list rows become a single line of columns */
+  #members.list .card{display:grid;grid-template-columns:2fr 2fr 1.4fr 2fr 1.6fr;gap:1rem;align-items:center}
+  #members.list .card p{margin:0}
+
+  footer{grid-template-columns:1fr auto 1fr;align-items:center;padding:1.25rem 2rem}
+  .social{justify-content:center}
+  .credits{text-align:right}
+}
+
+@media only screen and (min-width: 64rem){
+  #members.grid{grid-template-columns:repeat(3,1fr)}
+}

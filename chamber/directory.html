@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Directory | Accra Chamber of Commerce</title>
+  <meta name="description"
+    content="Browse member businesses of the Accra Chamber of Commerce. Find local shops, services, and restaurants.">
+  <meta name="author" content="Emmanuel Adams">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Facebook / Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Business Directory | Accra Chamber of Commerce">
+  <meta property="og:description" content="Browse member businesses of the Accra Chamber of Commerce.">
+  <meta property="og:image" content="https://eadams9.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://eadams9.github.io/wdd231/chamber/directory.html">
+
+  <!-- Normalize first, then small, then larger -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="images/favicon.svg" width="40" height="40" alt="">
+      <span>Accra Chamber of Commerce</span>
+    </a>
+    <div class="controls">
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode">&#9680;</button>
+      <button id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+        aria-controls="primary-nav">&#9776;</button>
+    </div>
+    <nav id="primary-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Directory</h1>
+    <div class="view-toggle" role="group" aria-label="Choose directory layout">
+      <button id="grid" type="button" aria-pressed="true">Grid</button>
+      <button id="list" type="button" aria-pressed="false">List</button>
+    </div>
+    <section id="members" class="grid" aria-live="polite" aria-label="Chamber members">
+      <p>Loading members&hellip;</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p><strong>Accra Chamber of Commerce</strong></p>
+      <address>
+        Darkuman<br>
+        Accra, Greater Accra<br>
+        <a href="mailto:info@accrachamber.org">info@accrachamber.org</a><br>
+        (000) 555-0100
+      </address>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+      <a href="https://x.com/" aria-label="X (Twitter)" target="_blank" rel="noopener">X</a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+    </div>
+    <div class="credits">
+      <p>WDD 231 Class Project</p>
+      <p>Emmanuel Adams</p>
+      <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/directory.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Sunrise Bakery & Cafe",
+      "tagline": "Fresh bread every morning",
+      "address": "Market Street, Accra",
+      "phone": "(000) 555-0101",
+      "email": "hello@sunrisebakery.example",
+      "website": "https://www.sunrisebakery.example",
+      "image": "sunrise-bakery.svg",
+      "membership": 3,
+      "since": 2015
+    },
+    {
+      "name": "Harbor Tech Solutions",
+      "tagline": "IT support for small business",
+      "address": "Alhafia Road, Accra",
+      "phone": "(000) 555-0102",
+      "email": "support@harbortech.example",
+      "website": "https://www.harbortech.example",
+      "image": "harbor-tech.svg",
+      "membership": 3,
+      "since": 2018
+    },
+    {
+      "name": "Greenleaf Landscaping",
+      "tagline": "Gardens built to last",
+      "address": "Nii Okai Lane, Accra",
+      "phone": "(000) 555-0103",
+      "email": "info@greenleaf.example",
+      "website": "https://www.greenleaf.example",
+      "image": "greenleaf.svg",
+      "membership": 2,
+      "since": 2019
+    },
+    {
+      "name": "Northside Family Dental",
+      "tagline": "Gentle care for every age",
+      "address": "Accra North Avenue, Accra",
+      "phone": "(000) 555-0104",
+      "email": "smile@northsidedental.example",
+      "website": "https://www.northsidedental.example",
+      "image": "northside-dental.svg",
+      "membership": 2,
+      "since": 2017
+    },
+    {
+      "name": "Riverbend Books",
+      "tagline": "Independent and proud",
+      "address": "Abeka Lapaz, Accra",
+      "phone": "(000) 555-0105",
+      "email": "read@riverbendbooks.example",
+      "website": "https://www.riverbendbooks.example",
+      "image": "riverbend-books.svg",
+      "membership": 1,
+      "since": 2021
+    },
+    {
+      "name": "Summit Fitness Studio",
+      "tagline": "Strong body, strong community",
+      "address": "Darkuman Avenue, Accra",
+      "phone": "(000) 555-0106",
+      "email": "join@summitfit.example",
+      "website": "https://www.summitfit.example",
+      "image": "summit-fitness.svg",
+      "membership": 1,
+      "since": 2022
+    },
+    {
+      "name": "Lakeside Legal Group",
+      "tagline": "Clear advice for local business",
+      "address": "Abeka Junction, Accra",
+      "phone": "(000) 555-0107",
+      "email": "office@lakesidelegal.example",
+      "website": "https://www.lakesidelegal.example",
+      "image": "lakeside-legal.svg",
+      "membership": 2,
+      "since": 2016
+    }
+  ]
+}
