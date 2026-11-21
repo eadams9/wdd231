@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Accra Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Accra Chamber of Commerce. Discover local businesses, upcoming events, today's weather, and how to join.">
+    <meta name="author" content="Emmanuel Adams">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home | Accra Chamber of Commerce">
+    <meta property="og:description" content="Local businesses, events, and networking in Accra.">
+    <meta property="og:image" content="https://eadams9.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://eadams9.github.io/wdd231/chamber/index.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/favicon.svg" width="40" height="40" alt="">
+            <span>Accra Chamber of Commerce</span>
+        </a>
+        <div class="controls">
+            <button id="theme-toggle" type="button" aria-label="Toggle dark mode">&#9680;</button>
+            <button id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primary-nav">&#9776;</button>
+        </div>
+        <nav id="primary-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="images/" srcset="images/ 800w, images/ 1600w" sizes="100vw" width="1600" height="600"
+            fetchpriority="high" alt="Picture of Accra">
+        <a class="cta" href="join.html">Join the Chamber</a>
+    </div>
+
+    <main class="home">
+        <div class="intro">
+            <h1>Welcome to the Accra Chamber of Commerce</h1>
+            <p>We connect Accra's businesses, support local growth, and bring neighbours together. Explore events, meet
+                our members, and find out how to get involved.</p>
+        </div>
+
+        <section class="panel events" aria-labelledby="events-title">
+            <h2 id="events-title">Upcoming Events</h2>
+            <ul>
+                <li><strong>Fri, 4 Dec:</strong> Business After Hours Mixer, Osu</li>
+                <li><strong>Thu, 10 Dec:</strong> Digital Marketing Workshop for SMEs</li>
+                <li><strong>Sat, 19 Dec:</strong> Accra Small Business Expo, Ridge</li>
+            </ul>
+        </section>
+
+        <section class="panel weather" aria-labelledby="weather-title">
+            <h2 id="weather-title">Accra Weather</h2>
+            <div id="current-weather" aria-live="polite">
+                <p>Loading weather&hellip;</p>
+            </div>
+            <h3>3-Day Forecast</h3>
+            <ul id="forecast"></ul>
+        </section>
+
+        <section class="spotlights" aria-labelledby="spot-title">
+            <h2 id="spot-title">Member Spotlights</h2>
+            <div id="spotlights" aria-live="polite">
+                <p>Loading spotlights...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p><strong>Accra Chamber of Commerce</strong></p>
+            <address>
+                10 Independence Avenue<br>
+                Accra, Greater Accra Region, Ghana<br>
+                <a href="mailto:info@accrachamber.example">info@accrachamber.example</a><br>
+                +233 55 187 9960
+            </address>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">f</a>
+            <a href="https://x.com/" aria-label="X (Twitter)" target="_blank">X</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank">in</a>
+        </div>
+        <div class="credits">
+            <p>WDD 231 Chamber Project</p>
+            <p>Emmanuel Adams</p>
+            <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
