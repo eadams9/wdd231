@@ -271,3 +271,62 @@ footer a {
 body.dark .social a {
   color: #0f2a3b
 }
+
+/* Weather panel */
+.panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  padding: 1rem
+}
+
+.panel h2 {
+  margin: 0 0 .75rem;
+  font-size: 1.3rem;
+  padding-bottom: .25rem;
+  border-bottom: 3px solid var(--accent)
+}
+
+.panel h3 {
+  margin: 1rem 0 .25rem;
+  font-size: 1.05rem
+}
+
+.panel ul {
+  list-style: none
+}
+
+.panel li {
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--border)
+}
+
+.panel li:last-child {
+  border-bottom: 0
+}
+
+.now {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: .75rem
+}
+
+.now p {
+  margin: .1rem 0
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: 700
+}
+
+.desc {
+  text-transform: capitalize
+}
+
+.day {
+  display: inline-block;
+  min-width: 6.5rem;
+  font-weight: 700
+}
