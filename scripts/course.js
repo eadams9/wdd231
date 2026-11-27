@@ -105,6 +105,11 @@ function displayCourses(list) {
 
         card.title = course.title;
         courseList.appendChild(card);
+
+        // Add click event listener to each course card
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     });
 
     // Total credits for the courses currently displayed
@@ -131,3 +136,30 @@ filterButtons.forEach(button => {
 
 // Initial display
 displayCourses(courses);
+
+const courseDetails = document.querySelector('#course-dialog');
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    <button id="close-dialog">Close</button>
+  `;
+  courseDetails.showModal();
+
+  courseDetails.querySelector('#close-dialog').addEventListener('click', () => {
+    courseDetails.close();
+  });
+}
+
+// Close the modal when the user clicks outside of it (on the backdrop)
+courseDetails.addEventListener('click', (event) => {
+  if (event.target === courseDetails) {
+    courseDetails.close();
+  }
+});
+

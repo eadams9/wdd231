@@ -245,3 +245,30 @@ footer p {
     width: 32px;
     height: 32px;
 }
+
+#course-dialog {
+    padding: 1rem;
+    border: 2px solid var(--dark);
+    border-radius: 6px;
+    background-color: var(--panel);
+    max-width: 800px;
+    width: 90%;
+}
+
+#course-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-dialog {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--dark);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
